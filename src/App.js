@@ -9,19 +9,20 @@ class App extends Component {
     super(props)
 
     this.state = {
-      events: data.birthdays.map((user) => {return {
-        name: `${user.FirstName} ${user.LastName}`,
-        img: user.ImageURL,
-        type: "birthday",
-        gifTag: "birthday"
-      }}).concat(
-      data.anniversaries.map((user) => {return {
+      events: data.anniversaries.map((user) => {return {
         name: `${user.FirstName} ${user.LastName}`,
         years: moment().year() - moment(user.HireDate).year(),
         img: user.ImageURL,
         type: "anniversary",
         gifTag: "celebration"
-      }})).concat(
+      }}).concat(
+        data.birthdays.map((user) => {return {
+          name: `${user.FirstName} ${user.LastName}`,
+          img: user.ImageURL,
+          type: "birthday",
+          gifTag: "birthday"
+        }})
+      ).concat(
       data.probation_passed.map((user) => {return {
         name: `${user.FirstName} ${user.LastName}`,
         img: user.ImageURL,

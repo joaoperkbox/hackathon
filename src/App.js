@@ -33,7 +33,7 @@ class App extends Component {
   }
 
   getGif(tag) {
-    fetch(`http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=${tag}`)
+    fetch(`https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=${tag}`)
       .then((response) => {
         return response.json();
       })

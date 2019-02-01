@@ -2,9 +2,11 @@
   "name": "hackathon",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://joaoperkbox.github.io/hackathon/",
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-giphy": "0.0.1",
     "react-scripts": "2.1.3"
   },
   "scripts": {

@@ -2,31 +2,38 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.birthday {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.message {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.message > img {
+  flex-shrink: 1;
 }
+
+.name {
+  font-size: 60px;
+  font-family: "Dosis";
+  font-weight: 600;
+  height: 40%;
+}
+
+.gif {
+  height: 40%;
+  flex-shrink: 1;
+}
+
+.gif > img {
+  height: 100%;
+}
+
